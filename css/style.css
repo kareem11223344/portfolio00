@@ -1,0 +1,310 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+:root{
+    --favco:#046875;
+}
+a:hover{
+    transition: 0.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+html::-webkit-scrollbar-thumb{
+    background:var(--favco);
+}   
+body{
+    background-color: #111;
+}
+/* start header  */
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: 100%;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+.header .user img{
+    border-radius: 50%;
+    height: 185px;
+    width: 165px;
+    border: 5px solid #046875;
+}
+.header .user .name{
+    color: #fff;
+    font-size: 35px;
+}
+.header .user .post{
+    color: #fff;
+    font-size: 18px;
+}
+.header .user i{
+    font-size: 33px;
+    color: var(--favco);
+    margin: 10px; margin-top: 25px;
+    border: none;
+}
+.header .icon-user i:hover{
+    background-color: red;
+}
+.navbar ul{
+    padding: 16px 48px;
+}
+.navbar ul li a{
+    display: block;
+    color: #fff;
+    background-color: #333;   
+    padding: 7px;
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 80px;
+    width: 300px;
+}
+.navbar ul li a:hover{
+    background-color: #046875;
+}
+
+/* end header  */
+
+/* start section home  */
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+    margin-left: 210px;
+    margin-top: 250px;
+}
+.home h3{
+    color:#fff;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.home h1{
+    color: #fff;
+    font-size: 55px;
+}
+.home h1 span{
+    color: #046875;
+}
+.home p{
+    color: #fff;
+    font-size: 18px;
+}
+.home .btn{
+    width: 170px;
+    height: 42px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 20px;
+    border-radius: 5rem;
+    border: none;
+    transition: 0.5s;
+}
+.home .btn:hover{
+    background-color: #046875;
+}
+/* end section home */
+
+/* start section about */
+
+.heading{      /* ************** 2 */
+    margin-left: 352px;
+    margin-top: 250px;
+    color: #fff;
+    font-size: 45px;
+    border-bottom: 1px solid #fff4;
+    padding-left: 402px;
+}
+.heading h1{
+    color: #fff;
+}
+.heading span{
+    color: #046875;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin: 50px;
+}
+.row .info{
+    margin-left: 300px;
+    flex:1 1 48rem;
+    padding:35px 15px;
+    padding-left: 70px;
+    
+}
+.row .info h3{
+    color: #046875;
+    margin: 30px 0px 0px 0px;
+}
+.row .info span{
+    color: #fff;
+}
+.info .btn{
+    margin-top: 22px;
+    width: 168px;
+    height: 45px;
+    border-radius: 26px;
+    border: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+}
+.info .btn:hover{
+    background-color: #046875 ;
+}
+.row .counter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-right: 100px; */
+}
+.row .counter .box{
+    width: 200px;
+    background: #222;
+    text-align: center;
+    /* padding: 36px;
+    margin: 30px 90px; */
+    padding: 36px;
+    margin: 30px;
+}
+.row .counter .box span{
+    color: #046875;
+    font-size: 45px;
+    font-weight: bold;
+}
+.row .counter .box h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* end section about */
+
+/* start education section */
+.education .box-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 370px;
+    padding: 50px;
+}
+.education .box-container .box{
+    width: 300px;
+    padding-top: 50px;
+    padding-left: 25px;
+    border-left: 3px solid #fff;
+}
+.education .box-container .box i{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #046875;
+    text-align: center;
+    padding: 9px;
+    font-size: 22px;
+    color: #fff;
+    margin: -50px;
+    margin-bottom: 0px;
+}    
+.education .box-container .box span{
+    color: #fff;
+    margin-left: 64px;
+    width: 379px;
+    height: 296px;
+    background-color: #333;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.education .box-container .box h3{
+    color: #fff;
+}
+.education .box-container .box p{
+    color: #fff;
+    margin-top: 18px;
+}
+/* end education section */
+
+/* start portfolio section */
+.portfolio .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    padding-left: 401px;
+}
+.portfolio .box-container .box img{
+    width: 300px;
+    height: 250px;
+    padding: 30px;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.portfolio .box-container .box img:hover{
+    transform: scale(1.1);
+}
+/* end portfolio section */
+
+/* Start footer  */
+.end-page{
+    background-color: #001;
+    z-index: 5000;
+    position: absolute;
+    width: 90%;  
+    left: 350px;
+} 
+.pearent{
+    display: flex;
+    /* height: 100px; */
+}
+.name h6{
+    font-size: 17px;
+    color: #fff;
+    padding: 20px 60px;
+    margin-top: 10px;
+    
+}
+.name span{
+    color: red;
+}
+.icon{
+    margin-left: 480px;
+    margin-top: 20px;
+}
+.icon i{
+    padding: 10px 4px;
+    color: #bababa;
+   
+}
+.icon i:hover{
+    color: #e3d105;
+}
+.icon i{
+    font-size: 35px;
+}
+/* End footer  */
